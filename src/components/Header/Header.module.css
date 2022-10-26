@@ -4,6 +4,8 @@
   height: 80px;
   background-color: #4f27bf;
   margin: 0 auto;
+  position: sticky;
+  top: 0;
 }
 .navigation {
   height: 80px;

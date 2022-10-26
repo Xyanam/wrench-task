@@ -5,6 +5,9 @@ import ic_calendar from "../assets/img/ic_calendar.svg";
 import ic_map from "../assets/img/ic_map.svg";
 import ic_widget from "../assets/img/ic_widget.svg";
 import ic_setting from "../assets/img/ic_setting.svg";
+import ic_settingProfile from "../assets/img/ic_settingProfile.svg";
+import ic_cashbox from "../assets/img/ic_cashbox.svg";
+import ic_exit from "../assets/img/ic_exit.svg";
 
 type TNavigation = {
   key: string;
@@ -62,6 +65,26 @@ const MainNavTree: TNavigation[] = [
     path: "/",
     title: "Настройки",
     icon: ic_setting,
+    submenu: [
+      {
+        key: "settingsProfile",
+        path: "/",
+        title: "Настройки профиля",
+        icon: ic_settingProfile,
+      },
+      {
+        key: "settingsFinance",
+        path: "/",
+        title: "Управление финансами",
+        icon: ic_cashbox,
+      },
+    ],
+  },
+  {
+    key: "exit",
+    path: "/",
+    title: "Выход",
+    icon: ic_exit,
     submenu: [],
   },
 ];

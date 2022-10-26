@@ -36,9 +36,9 @@
 }
 .containerAddress {
   padding: 0 15px;
-  max-width: 1100px;
+  max-width: 1090px;
   width: 100%;
-  box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 2px 8px 0px #02006140;
 }
 .address {
   margin-top: 10px;

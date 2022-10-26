@@ -49,18 +49,22 @@ const Search: React.FC = () => {
           <img src={ic_findWhite} alt="find" className={classes.icon} /> Поиск
         </button>
       </form>
-      <div className={classes.containerAddress}>
-        <h2>Адреса</h2>
-        <div>
-          {addresses.map((address) => {
-            return (
-              <div className={classes.address}>
-                <span>{address.value}</span>
-              </div>
-            );
-          })}
+      {!addresses.length ? (
+        ""
+      ) : (
+        <div className={classes.containerAddress}>
+          <h2>Адреса</h2>
+          <div>
+            {addresses.map((address, index) => {
+              return (
+                <div className={classes.address} key={index}>
+                  <span>{address.value}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
