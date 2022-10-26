@@ -1,0 +1,11 @@
+.container {
+  max-width: 1130px;
+  width: 100%;
+  margin-left: 20px;
+}
+.title {
+  font-size: 26px;
+}
+.description {
+  font-size: 20px;
+}

@@ -1,0 +1,50 @@
+.container {
+  max-width: 1130px;
+  width: 100%;
+}
+.inputBlock {
+  display: flex;
+}
+.input {
+  max-width: 800px;
+  width: 100%;
+  margin-right: 20px;
+  padding: 15px;
+  font-size: 20px;
+  border: 3px solid #4f27bf;
+  border-radius: 10px;
+}
+.btn {
+  width: 200px;
+  height: 60px;
+  background-color: #4f27bf;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.containerAddress {
+  padding: 0 15px;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.address {
+  margin-top: 10px;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+.address span {
+  font-size: 20px;
+}
