@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-right: 10px;
+  padding-right: 20px;
   justify-content: space-between;
 }
 .blockActive {
@@ -89,11 +89,7 @@
     width: 35px;
     height: 35px;
   }
-  .block {
-    width: 35px;
-    height: 35px;
-    overflow: hidden;
-  }
+
   .navSubItem {
     margin-left: 0;
   }

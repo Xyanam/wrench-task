@@ -61,7 +61,11 @@ const Search: React.FC = () => {
         <Loader />
       ) : (
         <div className={classes.containerAddress}>
-          {addresses.length <= 0 ? "" : <h2>Адреса</h2>}
+          {addresses.length <= 0 ? (
+            ""
+          ) : (
+            <h2 style={{ margin: "20px" }}>Адреса</h2>
+          )}
           <div className={classes.blockAddress}>
             {addresses.map((address, index) => {
               return (

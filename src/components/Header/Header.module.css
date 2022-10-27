@@ -45,3 +45,8 @@
   color: white;
   font-weight: bold;
 }
+@media (max-width: 425px) {
+  .user {
+    display: none;
+  }
+}
