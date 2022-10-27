@@ -5,7 +5,7 @@
 
 .sidebar {
   position: fixed;
-  overflow: auto;
+  overflow-y: scroll;
   height: 570px;
   max-width: 300px;
   width: 100%;
@@ -71,13 +71,16 @@
 
 @media (max-width: 768px) {
   .container {
-    max-width: 50px;
+    max-width: 65px;
     overflow: hidden;
   }
   .sidebar {
-    max-width: 50px;
-    height: 300px;
-    overflow: auto;
+    max-width: 65px;
+    height: 450px;
+    overflow-y: scroll;
+  }
+  .title {
+    display: none;
   }
   .menu {
     display: none;
