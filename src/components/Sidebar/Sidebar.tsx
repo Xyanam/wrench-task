@@ -13,10 +13,9 @@ const Sidebar: React.FC = () => {
         <h2 className={classes.menu}>Меню</h2>
         {navigationConfig.map((navigation, index) => {
           return (
-            <div>
+            <div key={navigation.key}>
               <Link
                 to={navigation.path}
-                key={navigation.key}
                 className={
                   activeNav === index ? classes.blockActive : classes.block
                 }
@@ -30,15 +29,18 @@ const Sidebar: React.FC = () => {
                   />
                   <span className={classes.title}>{navigation.title}</span>
                 </div>
-                {navigation.submenu.length > 0 && (
-                  <img
-                    src={arrow}
-                    onClick={() => setActiveArrow(!activeArrow)}
-                    className={
-                      activeArrow ? classes.arrowActive : classes.arrow
-                    }
-                  />
-                )}
+                <div>
+                  {navigation.submenu.length > 0 && (
+                    <img
+                      src={arrow}
+                      onClick={() => setActiveArrow(!activeArrow)}
+                      className={
+                        activeArrow ? classes.arrowActive : classes.arrow
+                      }
+                      alt="arrow"
+                    />
+                  )}
+                </div>
               </Link>
               {activeArrow &&
                 navigation.submenu?.map((sub) => {
