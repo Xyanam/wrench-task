@@ -3,6 +3,7 @@ import ic_findWhite from "../../assets/img/ic_findWhite.svg";
 import classes from "./Search.module.css";
 import { DaDataAddressSuggestion } from "react-dadata";
 import Loader from "../Loader/Loader";
+import AddressesBlock from "../AddresssesBlock/AddressesBlock";
 
 const Search: React.FC = () => {
   const [addressValue, setAddressValue] = useState<string | number>("");
@@ -57,26 +58,7 @@ const Search: React.FC = () => {
           </button>
         </form>
       </div>
-      {loader ? (
-        <Loader />
-      ) : (
-        <div className={classes.containerAddress}>
-          {addresses.length <= 0 ? (
-            ""
-          ) : (
-            <h2 style={{ margin: "20px" }}>Адреса</h2>
-          )}
-          <div className={classes.blockAddress}>
-            {addresses.map((address, index) => {
-              return (
-                <div className={classes.address} key={index}>
-                  <span>{address.value}</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
+      {loader ? <Loader /> : <AddressesBlock addresses={addresses} />}
     </>
   );
 };

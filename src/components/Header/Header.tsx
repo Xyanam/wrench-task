@@ -3,7 +3,7 @@ import classes from "./Header.module.css";
 import wrench from "../../assets/img/ic_wrench.svg";
 import ic_person from "../../assets/img/ic_person.svg";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className={classes.header}>
       <div className={classes.navigation}>
